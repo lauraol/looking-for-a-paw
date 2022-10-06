@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulário de adoção</title>
+    <link rel="shortcut icon" href="../assets/paw.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/form.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <a href="../pages/card-id-pet.html">
+      <img
+        src="../assets/arrow-left.png"
+        alt="Clique aqui para voltar para a página anterior."
+      />
+    </a>
+    <h1>Formulário de adoção</h1>
+    <main>
+      <form
+        action="https://formsubmit.co/lauroutestesdev@gmail.com"
+        method="POST"
+      >
+        <input
+          type="hidden"
+          name="_next"
+          value="http://127.0.0.1:5500/pages/welcome-page.html"
+        />
+        <input type="hidden" name="_captcha" value="false" />
+        <div class="container-inputs">
+          <input
+            type="text"
+            name="name"
+            placeholder="Digite seu nome"
+            required
+          />
+          <input type="text" name="age" placeholder="Idade" required />
+        </div>
+        <input type="email" name="email" placeholder="E-mail" required />
+        <input type="text" name="address" placeholder="Endereço" required />
+        <div class="container-inputs">
+          <input
+            type="text"
+            name="more-animals"
+            placeholder="Possui mais algum animal em casa?"
+            required
+          />
+          <input type="text" placeholder=" Se sim, quantos?" />
+        </div>
+        <input
+          type="text"
+          name="apartament-or-house"
+          placeholder="Você mora em apartamento ou casa?"
+          required
+        />
+        <div class="third-container-inputs">
+          <input
+            type="text"
+            placeholder="Todos na casa são a favor da adoção?"
+            required
+          />
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </main>
+  </body>
+</html>
